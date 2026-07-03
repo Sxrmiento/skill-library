@@ -1,0 +1,47 @@
+{
+  "image": {
+    "default": "flux-dev",
+    "models": {
+      "flux-dev": {
+        "fal_id": "fal-ai/flux/dev",
+        "output_path": "images[0].url",
+        "default_args": {}
+      },
+      "flux-pro": {
+        "fal_id": "fal-ai/flux-pro/v1.1",
+        "output_path": "images[0].url",
+        "default_args": {}
+      }
+    }
+  },
+  "video_image_to_video": {
+    "default": "kling",
+    "models": {
+      "kling": {
+        "fal_id": "fal-ai/kling-video/v2.1/standard/image-to-video",
+        "output_path": "video.url",
+        "default_args": {}
+      }
+    }
+  },
+  "upscale_video": {
+    "default": "topaz",
+    "models": {
+      "topaz": {
+        "fal_id": "fal-ai/topaz/upscale/video",
+        "output_path": "video.url",
+        "default_args": {}
+      }
+    }
+  },
+  "upscale_image": {
+    "default": "esrgan",
+    "models": {
+      "esrgan": {
+        "fal_id": "fal-ai/esrgan",
+        "output_path": "image.url",
+        "default_args": {}
+      }
+    }
+  }
+}
