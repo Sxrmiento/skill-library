@@ -21,6 +21,16 @@ Catálogo personal de skills reutilizables para Claude Code. Estas skills **no**
 | `optimizar-prompts` | Ingeniería de prompts iterando contra el eval, una variable a la vez, prompts versionados | Proyectos con prompts de producción | Propia |
 | `escribir-skills` | Meta: cómo escribir skills que se activan y se obedecen (extracción, description, anti-patrones) | Donde se estén creando skills nuevas | Propia |
 | `media-gen` | Genera imágenes y video con Fal.ai (texto→imagen, imagen→video, upscale Topaz) | Proyectos que generan media | Script externo de repo git — auditado 2026-07-03: APTA CON CONDICIONES (sube archivos de referencia a Fal.ai) |
+| `differential-review` | Revisión de seguridad de diffs: blast radius, git blame de código de seguridad borrado, modelado adversarial (incluye agente adversarial-modeler) | Todo proyecto con código sensible; complementa al agente revisor | trailofbits/skills@cfe5d7b1 — auditada 2026-07-03: APTA — CC BY-SA 4.0 |
+| `supply-chain-risk-auditor` | Evalúa riesgo de takeover/compromiso de dependencias vía gh (mantenedores, actividad, CVEs, contacto de seguridad) | Antes de adoptar dependencias; auditorías periódicas | trailofbits/skills@cfe5d7b1 — auditada 2026-07-03: APTA — CC BY-SA 4.0 |
+| `semgrep` | Escaneo de seguridad con Semgrep en subagentes paralelos, SARIF merged (incluye agente semgrep-scanner) | Proyectos con ámbito de seguridad alto | trailofbits/skills@cfe5d7b1 — auditada 2026-07-03: APTA — CC BY-SA 4.0 |
+| `codeql` | Análisis interprocedural con CodeQL: base de datos, data extensions, suites explícitas | Auditorías profundas de seguridad | trailofbits/skills@cfe5d7b1 — auditada 2026-07-03: APTA — CC BY-SA 4.0 |
+| `sarif-parsing` | Procesa resultados SARIF: filtrado, deduplicación, fingerprints, jq/pysarif | Junto a semgrep/codeql | trailofbits/skills@cfe5d7b1 — auditada 2026-07-03: APTA — CC BY-SA 4.0 |
+| `mutation-testing` | Configura campañas de mutation testing con mewt/muton (Rust, Go, TS/JS, Solidity) | Proyectos en esos lenguajes con contrato de tests máximo | trailofbits/skills@cfe5d7b1 — APTA — CONDICIÓN: atada a mewt/muton, NO cubre Python/mutmut — CC BY-SA 4.0 |
+| `property-based-testing` | PBT con catálogo de propiedades (roundtrip, idempotencia, invariantes) y detección automática de patrones | Proyectos con serialización/parsing/validación | trailofbits/skills@cfe5d7b1 — auditada 2026-07-03: APTA — CC BY-SA 4.0 |
+| `mcp-builder` | Construir servidores MCP de calidad (Python/TypeScript) con harness de evaluación | Herramientas para devs, integraciones LLM | anthropics/skills@9d2f1ae1 — auditada 2026-07-03: APTA — Apache-2.0 |
+| `webapp-testing` | Testeo de apps web locales con Playwright + gestor de ciclo de vida de servidores | Todo proyecto con UI web | anthropics/skills@9d2f1ae1 — auditada 2026-07-03: APTA — Apache-2.0 (with_server.py usa shell=True: solo comandos propios) |
+| `frontend-design` | Criterio de diseño anti-plantilla: tipografía, paleta, elemento firma, proceso de dos pasadas | Productos con UI que no deban verse genéricos | anthropics/skills@9d2f1ae1 — auditada 2026-07-03: APTA — Apache-2.0 |
 
 ## Añadir una skill nueva
 

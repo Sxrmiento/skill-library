@@ -22,11 +22,13 @@ El modelo decide activar la skill leyendo SOLO la description. Por eso:
 
 - **Describe cuándo usarla, no qué contiene**: con los verbos y palabras que el usuario diría ("úsalo cuando pida generar una imagen…"), no un resumen del contenido.
 - Incluye el caso no obvio: "aplica aunque el cambio parezca pequeño", "especialmente cuando hay prisa" — los triggers fallan justo en los bordes.
+- **Sé "pushy"**: el fallo típico es el under-triggering (la skill no se activa cuando debería). Enumera en la description las frases y contextos concretos que deben dispararla, "aunque el usuario no pida X explícitamente". (Idea de anthropics/skill-creator.)
 - Si tiene requisitos duros (API key, dependencia), decláralos en la description para que la skill falle rápido y claro.
 
 ## El cuerpo
 
 - **Corto**: si pasa de ~100 líneas, o son dos skills o sobra prosa. Cada línea compite por atención; la skill perfecta es la que no se puede recortar.
+- **Divulgación progresiva** para skills grandes (idea de anthropics/skill-creator): tres niveles — description (siempre en contexto), cuerpo del SKILL.md (al activarse; corto), y `references/`/`scripts/` (se cargan solo cuando hacen falta; los scripts se ejecutan como caja negra sin leerse). El material extenso va a references con un índice claro de cuándo leer cada archivo, nunca inflando el cuerpo.
 - **Reglas con su porqué**: "corre el suite completo PORQUE el fallo real fue no correr los tests existentes". Una regla sin porqué se racionaliza y se salta bajo presión; el porqué crea la fricción que lo impide.
 - **Anti-patrones explícitos**: lista los atajos exactos que parecerán justificados en el momento ("arreglo rápido ahora, investigo luego"). Ver el propio atajo listado como error es la defensa más efectiva.
 - **Sección "Qué NO es"**: una skill sin límites se aplica a todo, se vuelve ceremonia, y una regla pesada aplicada a todo se empieza a saltar.
