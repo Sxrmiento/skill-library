@@ -20,7 +20,7 @@ Catálogo personal de skills reutilizables para Claude Code. Estas skills **no**
 | `evals-llm` | Evaluaciones para features con LLM: dataset de casos, graders, regresión contra baseline | Todo proyecto con LLMs en el producto | Propia |
 | `optimizar-prompts` | Ingeniería de prompts iterando contra el eval, una variable a la vez, prompts versionados | Proyectos con prompts de producción | Propia |
 | `escribir-skills` | Meta: cómo escribir skills que se activan y se obedecen (extracción, description, anti-patrones) | Donde se estén creando skills nuevas | Propia |
-| `media-gen` | Genera imágenes y video con Fal.ai (texto→imagen, imagen→video, upscale Topaz) | Proyectos que generan media | Script externo de repo git — auditado 2026-07-03: APTA CON CONDICIONES (sube archivos de referencia a Fal.ai → prohibido pasarle datos personales o contenido de menores) |
+| `media-gen` | Genera imágenes y video con Fal.ai (texto→imagen, imagen→video, upscale Topaz) | Proyectos que generan media | Script externo de repo git — auditado 2026-07-03: APTA CON CONDICIONES (sube archivos de referencia a Fal.ai) |
 
 ## Añadir una skill nueva
 
