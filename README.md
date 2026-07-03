@@ -14,7 +14,7 @@ Catálogo personal de skills reutilizables para Claude Code. Estas skills **no**
 | Skill | Qué hace | Cuándo instalarla | Origen / Auditoría |
 |-------|----------|-------------------|--------------------|
 | `depurar` | Debugging sistemático por causa raíz (4 fases, regla de los 3 fixes, espera por condición) | Todo proyecto con código no trivial | Propia, adaptada de superpowers/systematic-debugging (MIT, `obra/superpowers@d884ae04`) — auditada 2026-07-03: APTA |
-| `tdd` | Ciclo rojo→verde→refactor, test de comportamiento primero | Proyectos con ámbito de tests declarado al máximo | Propia |
+| `tdd` | Ciclo rojo→verde→refactor, test de comportamiento primero | Proyectos con ámbito de tests | Propia |
 | `documentar-proyecto` | README quickstart <5 min, ejemplos ejecutables que no mienten, changelog | Proyectos que se comparten o publican (ámbito DX) | Propia |
 | `publicar-libreria` | Checklist de release público: puerta de seguridad, semver, CI matrix, trusted publishing | Librerías y herramientas públicas | Propia |
 | `evals-llm` | Evaluaciones para features con LLM: dataset de casos, graders, regresión contra baseline | Todo proyecto con LLMs en el producto | Propia |
