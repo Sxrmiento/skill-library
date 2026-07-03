@@ -19,4 +19,4 @@ Catálogo personal de skills reutilizables para Claude Code. Estas skills **no**
 
 1. Descarga en cuarentena y corre `auditar-skill` (claude-os).
 2. Si es APTA: copia a `skills/<nombre>/`, completa su SKILL.md (frontmatter con `audited:`), añade la fila al catálogo.
-3. Commit. Push solo bajo pedido de Samuel.
+
